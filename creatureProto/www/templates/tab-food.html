@@ -6,7 +6,7 @@
 
     #food {
       text-align: center;
-      width: 3em;
+      width: 0.5em;
       z-index: 1;
     }
 
@@ -19,13 +19,16 @@
 
   </style>
     <div>
-      <div id="rock" style='border-style: solid; border-width: 5px;' ng-drop="true" ng-drop-success="onDropComplete($data, $event)" >
+      <div id="rock" style='border-style: solid; border-width: 5px;' ng-drop="true" ng-drop-success="onDropComplete($data,$event)" >
         <img ng-src="{{creatures[0].gif}}"/>
       </div>
 
-      <div id="food" style="border-style:solid; border-width: 5px;" ng-drag="true" ng-drag-data="food[0]" ng-drag-success="onDragComplete($data,$event)" ng-center-anchor="{{centerAnchor}}" data-allow-transform="true">
-        <img id="food[0]" ng-src="{{food[0].face}}"/>
+      <div ng-repeat="item in randomFood" ng-drag="true" ng-drag-data="item" ng-drag-success="onDragSuccess1($data,$event)" ng-center-anchor="{{centerAnchor}}">
+          <img id="item" ng-src="{{item.location}}"/>
       </div>
+
+
+</div>
     </div>
 
   </ion-content>

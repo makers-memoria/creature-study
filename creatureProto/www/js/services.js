@@ -25,13 +25,12 @@ angular.module('starter.services', [])
   // Some fake testing data
   var food = [{
     id: 0,
-    name: 'Orange juice',
-    face: '/img/sammich.png'
+    name: 'Sandwich',
+    location: '/img/sammich.png'
   }, {
     id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
-    face: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
+    name: 'Juice',
+    location: '/img/orange_juice__x1_iconic_png_1354829944.png'
   }];
 
   return {
