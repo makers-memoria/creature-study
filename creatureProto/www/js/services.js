@@ -34,25 +34,11 @@ angular.module('starter.services', [])
   }];
 
   return {
-    all: function() {
-      return images;
-    },
     // pet: function() {
     //   return creatures;
     // },
     foodList: function() {
       return food;
-    },
-    remove: function(image) {
-      images.splice(images.indexOf(image), 1);
-    },
-    get: function(imageId) {
-      for (var i = 0; i < images.length; i++) {
-        if (images[i].id === parseInt(imageId)) {
-          return images[i];
-        }
-      }
-      return null;
     }
   };
 });

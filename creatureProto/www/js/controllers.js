@@ -21,8 +21,6 @@ angular.module('starter.controllers', ['ngDraggable'])
    }, 1000);
   }
 
-  $scope.centerAnchor = true;
-    $scope.toggleCenterAnchor = function () {$scope.centerAnchor = !$scope.centerAnchor}
 })
 
 .controller('SettingsCtrl', function($scope) {
