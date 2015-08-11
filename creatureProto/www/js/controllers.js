@@ -1,6 +1,6 @@
 angular.module('starter.controllers', ['ngDraggable'])
 
-.controller('FoodCtrl', function($scope, Images) {
+.controller('PetCtrl', function($scope, Images) {
   $scope.myVar = false;
   $scope.creatures = Images.pet();
   $scope.food = Images.foodList();
