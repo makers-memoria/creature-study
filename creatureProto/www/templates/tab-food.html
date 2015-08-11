@@ -6,7 +6,7 @@
 
     #food {
       text-align: center;
-      width: 0.5em;
+      width: 3em;
       z-index: 1;
     }
 
@@ -23,8 +23,9 @@
         <img ng-src="{{creatures[0].gif}}"/>
       </div>
 
-      <div id="food" style="border-style:solid; border-width: 5px;" ng-drag="true" ng-drag-data="pic" ng-drag-success="onDragComplete($data,$event)" ng-center-anchor="true" data-allow-transform="false">
-        <img id="pic" ng-src="{{food[0].face}}"/>
+      <div id="food" style="border-style:solid; border-width: 5px;" ng-drag="true" ng-drag-data="food[0]" ng-drag-success="onDragComplete($data,$event)" ng-center-anchor="true" data-allow-transform="false">
+        <img id="food[0]" ng-src="{{food[0].face}}"/>
+        {{food[0]}}
       </div>
     </div>
 
