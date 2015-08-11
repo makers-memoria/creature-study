@@ -1,91 +1,17 @@
+<link href="css/pet.css" rel="stylesheet">
 <ion-view view-title="Pet">
   <ion-content scroll="false" class="padding">
 
-  <style>
-    .padding {background-image: url("img/field.png");}
-
-    #food {
-      text-align: center;
-      width: 0.5em;
-      z-index: 1;
-      position: absolute;
-      margin-top: 35em;
-    }
-
-    #rock {
-      text-align: center;
-      margin-top: 20em;
-      margin-left: 10em;
-      z-index: 0;
-      position: absolute;
-    }
-
-    #speech {
-      text-align: center;
-      position: static;
-      float: right;
-      position: absolute;
-      margin-left: 15em;
-      margin-top: 15em;
-    }
-
-    #speech img {
-      width: 7em;
-    }
-
-    .pet {
-    width: 80px;
-    height: 76px;
-    background-repeat: no-repeat;
-    background-image: url("/img/editedrocksheet.png");
-
-    -webkit-animation: play .8s steps(12) infinite;
-       -moz-animation: play .8s steps(12) infinite;
-        -ms-animation: play .8s steps(12) infinite;
-         -o-animation: play .8s steps(12) infinite;
-            animation: play .8s steps(12) infinite;
-}
-
-@-webkit-keyframes play {
-   from { background-position:    0px; }
-     to { background-position: -972px; }
-}
-
-@-moz-keyframes play {
-   from { background-position:    0px; }
-     to { background-position: -972px; }
-}
-
-@-ms-keyframes play {
-   from { background-position:    0px; }
-     to { background-position: -972px; }
-}
-
-@-o-keyframes play {
-   from { background-position:    0px; }
-     to { background-position: -972px; }
-}
-
-@keyframes play {
-   from { background-position:    0px; }
-     to { background-position: -972px; }
-}
-
-
-  </style>
     <div>
 
       <div id="speech"  ng-show="myVar"><img src="img/speech-omnomnom.png" /></div>
 
-      <div id="rock" class="pet" ng-drop="true" ng-drop-success="onDropComplete(); eaten=!eaten" >
-      </div>
+      <div id="rock" class="pet" ng-drop="true" ng-drop-success="onDropComplete(); eaten=!eaten" ></div>
 
       <div ng-hide="eaten" ng-init="myVar='true'" id="food" ng-repeat="item in randomFood" ng-drag="true" ng-drag-data="item" ng-drag-success="onDragSuccess1($data,$event)" ng-center-anchor="{{centerAnchor}}">
           <img id="item" ng-src="{{item.location}}"/>
       </div>
 
-
-</div>
     </div>
 
   </ion-content>
