@@ -2,7 +2,13 @@ angular.module('starter.controllers', [])
 
 .controller('FoodCtrl', function($scope, Images) {
   $scope.creatures = Images.pet();
-
+  $scope.food = Images.foodList();
+  $scope.onDragComplete=function(data,evt){
+    console.log("drag success, data:", data);
+  }
+  $scope.onDropComplete=function(data,evt){
+    console.log("drop success, data:", data);
+  }
 })
 
 .controller('ChatsCtrl', function($scope, Images) {

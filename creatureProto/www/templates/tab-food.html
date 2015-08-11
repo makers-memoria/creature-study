@@ -1,7 +1,13 @@
 <ion-view view-title="Food">
   <ion-content class="padding">
     <div>
-      <img ng-src="{{creatures[0].gif}}" />
+      <img ng-src="{{creatures[0].gif}}"/>
+
+      <div ng-drag="true" ng-drag-data="pic" ng-drag-success="onDragComplete($data,$event)" ng-center-anchor="true" data-allow-transform="true">
+        Draggable div
+      <img id="pic" ng-src="{{food[0].face}}"/>
+      </div>
     </div>
+
   </ion-content>
 </ion-view>

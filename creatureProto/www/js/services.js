@@ -23,11 +23,10 @@ angular.module('starter.services', [])
 
 
   // Some fake testing data
-  var images = [{
+  var food = [{
     id: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
-    face: '/img/pet_rock__x2_readLeft_x1_readBreak_x1_readBreakTalk_x1_readResume_quality10_loop_1355434031.gif'
+    name: 'Orange juice',
+    face: '/img/sammich.png'
   }, {
     id: 1,
     name: 'Max Lynx',
@@ -41,6 +40,9 @@ angular.module('starter.services', [])
     },
     pet: function() {
       return creatures;
+    },
+    foodList: function() {
+      return food;
     },
     remove: function(image) {
       images.splice(images.indexOf(image), 1);
