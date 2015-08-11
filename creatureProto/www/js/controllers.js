@@ -1,16 +1,24 @@
 angular.module('starter.controllers', ['ngDraggable'])
 
 .controller('FoodCtrl', function($scope, Images) {
+  $scope.myVar = false;
   $scope.creatures = Images.pet();
   $scope.food = Images.foodList();
   $scope.randomFood = [$scope.food[Math.floor(Math.random() * $scope.food.length)]]
 
-  $scope.onDragComplete = function(data,evt){
-    console.log("drag success, data:", data);
-  }
+  // $scope.onDragComplete = function(data,evt){
+  //   console.log("drag success, data:", data);
+  // }
   $scope.onDropComplete = function(){
     console.log("Omnomnomnom!");
-    
+  $scope.myVar = true;
+   setTimeout(function ()
+   {
+     $scope.$apply(function()
+     {
+       $scope.myVar = false;
+     });
+   }, 1000);
   }
 
   $scope.centerAnchor = true;
