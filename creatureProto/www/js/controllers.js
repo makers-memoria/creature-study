@@ -2,7 +2,7 @@ angular.module('starter.controllers', ['ngDraggable'])
 
 .controller('PetCtrl', function($scope, Images) {
   $scope.myVar = false;
-  $scope.creatures = Images.pet();
+  // $scope.creatures = Images.pet();
   $scope.food = Images.foodList();
   $scope.randomFood = [$scope.food[Math.floor(Math.random() * $scope.food.length)]]
 
