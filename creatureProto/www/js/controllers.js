@@ -10,6 +10,7 @@ angular.module('starter.controllers', ['ngDraggable'])
   }
   $scope.onDropComplete = function(){
     console.log("Omnomnomnom!");
+    
   }
 
   $scope.centerAnchor = true;

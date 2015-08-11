@@ -3,6 +3,8 @@ angular.module('starter.services', [])
 .factory('Images', function() {
   // Might use a resource here that returns a JSON array
 
+  var eaten = false;
+
   var creatures = [
     {
       id: 0,
@@ -29,8 +31,8 @@ angular.module('starter.services', [])
     location: '/img/sammich.png'
   }, {
     id: 1,
-    name: 'Juice',
-    location: '/img/orange_juice__x1_iconic_png_1354829944.png'
+    name: 'Rice',
+    location: '/img/fried_rice__x1_iconic_png_1354829839.png'
   }];
 
   return {
