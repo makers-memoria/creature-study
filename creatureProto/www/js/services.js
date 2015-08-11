@@ -7,7 +7,17 @@ angular.module('starter.services', [])
     {
       id: 0,
       name: 'Reading',
+      gif: '/img/pet_rock__x3_readLeft_x1_readPageTurn_quality10_loop_1355433935.gif'
+    },
+    {
+      id: 1,
+      name: 'ReadBreak',
       gif: '/img/pet_rock__x2_readLeft_x1_readBreak_x1_readBreakTalk_x1_readResume_quality10_loop_1355434031.gif'
+    },
+    {
+      id: 2,
+      name: 'SpeedRead',
+      gif: '/img/pet_rock__x1_speedRead_quality10_loop_1355433966.gif'
     }
   ]
 
