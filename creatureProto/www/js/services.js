@@ -1,47 +1,44 @@
 angular.module('starter.services', [])
 
-.factory('Chats', function() {
+.factory('Images', function() {
   // Might use a resource here that returns a JSON array
 
+  var creatures = [
+    {
+      id: 0,
+      name: 'Reading',
+      gif: '/img/pet_rock__x2_readLeft_x1_readBreak_x1_readBreakTalk_x1_readResume_quality10_loop_1355434031.gif'
+    }
+  ]
+
+
   // Some fake testing data
-  var chats = [{
+  var images = [{
     id: 0,
     name: 'Ben Sparrow',
     lastText: 'You on your way?',
-    face: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
+    face: '/img/pet_rock__x2_readLeft_x1_readBreak_x1_readBreakTalk_x1_readResume_quality10_loop_1355434031.gif'
   }, {
     id: 1,
     name: 'Max Lynx',
     lastText: 'Hey, it\'s me',
     face: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
-  }, {
-    id: 2,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
-    face: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-  }, {
-    id: 3,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
-    face: 'https://pbs.twimg.com/profile_images/598205061232103424/3j5HUXMY.png'
-  }, {
-    id: 4,
-    name: 'Mike Harrington',
-    lastText: 'This is wicked good ice cream.',
-    face: 'https://pbs.twimg.com/profile_images/578237281384841216/R3ae1n61.png'
   }];
 
   return {
     all: function() {
-      return chats;
+      return images;
     },
-    remove: function(chat) {
-      chats.splice(chats.indexOf(chat), 1);
+    pet: function() {
+      return creatures;
     },
-    get: function(chatId) {
-      for (var i = 0; i < chats.length; i++) {
-        if (chats[i].id === parseInt(chatId)) {
-          return chats[i];
+    remove: function(image) {
+      images.splice(images.indexOf(image), 1);
+    },
+    get: function(imageId) {
+      for (var i = 0; i < images.length; i++) {
+        if (images[i].id === parseInt(imageId)) {
+          return images[i];
         }
       }
       return null;

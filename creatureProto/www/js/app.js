@@ -45,7 +45,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'tab-food': {
         templateUrl: 'templates/tab-food.html',
-        controller: 'DashCtrl'
+        controller: 'FoodCtrl'
       }
     }
   })
