@@ -3,6 +3,8 @@ angular.module('starter.services', [])
 .factory('Images', function() {
   // Might use a resource here that returns a JSON array
 
+  var eaten = false;
+
   var creatures = [
     {
       id: 0,
@@ -25,13 +27,12 @@ angular.module('starter.services', [])
   // Some fake testing data
   var food = [{
     id: 0,
-    name: 'Orange juice',
-    face: '/img/sammich.png'
+    name: 'Sandwich',
+    location: '/img/sammich.png'
   }, {
     id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
-    face: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
+    name: 'Rice',
+    location: '/img/fried_rice__x1_iconic_png_1354829839.png'
   }];
 
   return {
