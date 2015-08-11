@@ -1,11 +1,30 @@
 <ion-view view-title="Food">
-  <ion-content class="padding">
-    <div>
-      <img ng-src="{{creatures[0].gif}}"/>
+  <ion-content scroll="false" class="padding">
 
-      <div ng-drag="true" ng-drag-data="pic" ng-drag-success="onDragComplete($data,$event)" ng-center-anchor="true" data-allow-transform="true">
-        Draggable div
-      <img id="pic" ng-src="{{food[0].face}}"/>
+  <style>
+    .padding {background-image: url("img/field.png");}
+
+    #food {
+      text-align: center;
+      width: 0.5em;
+      z-index: 1;
+    }
+
+    #rock {
+      text-align: center;
+      margin-top: 20em;
+      z-index: 0;
+      position: relative;
+    }
+
+  </style>
+    <div>
+      <div id="rock" style='border-style: solid; border-width: 5px;' ng-drop="true" ng-drop-success="onDropComplete($data,$event)" >
+        <img ng-src="{{creatures[0].gif}}"/>
+      </div>
+
+      <div id="food" style="border-style:solid; border-width: 5px;" ng-drag="true" ng-drag-data="pic" ng-drag-success="onDragComplete($data,$event)" ng-center-anchor="true" data-allow-transform="false">
+        <img id="pic" ng-src="{{food[0].face}}"/>
       </div>
     </div>
 

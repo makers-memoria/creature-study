@@ -9,6 +9,8 @@ angular.module('starter.controllers', [])
   $scope.onDropComplete=function(data,evt){
     console.log("drop success, data:", data);
   }
+  $scope.centerAnchor = true;
+    $scope.toggleCenterAnchor = function () {$scope.centerAnchor = !$scope.centerAnchor}
 })
 
 .controller('ChatsCtrl', function($scope, Images) {
