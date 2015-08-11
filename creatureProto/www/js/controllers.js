@@ -26,9 +26,23 @@ angular.module('starter.controllers', ['ngDraggable'])
 })
 
 .controller('SettingsCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
+  $scope.settings = [
+    {
+    name: "Push",
+    checked: true
+    },
+    {
+    name: "Time",
+    checked: true
+    },
+    {
+    name: "Facebook"
+    },
+    {
+    name: "Sleep",
+    checked: true
+    }
+  ];
 })
 
 
