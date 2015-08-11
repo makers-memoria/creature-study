@@ -8,18 +8,37 @@
       text-align: center;
       width: 0.5em;
       z-index: 1;
+      position: absolute;
+      margin-top: 35em;
     }
 
     #rock {
       text-align: center;
       margin-top: 20em;
+      margin-left: 10em;
       z-index: 0;
-      position: relative;
+      position: absolute;
+    }
+
+    #speech {
+      text-align: center;
+      position: static;
+      float: right;
+      position: absolute;
+      margin-left: 15em;
+      margin-top: 15em;
+    }
+
+    #speech img {
+      width: 7em;
     }
 
   </style>
     <div>
-      <div id="rock" ng-drop="true" ng-drop-success="onDropComplete($data,$event); eaten=!eaten" >
+
+      <div id="speech" ng-show="eaten"><img src="img/speech-omnomnom.png" /></div>
+
+      <div id="rock" class="pet" ng-drop="true" ng-drop-success="onDropComplete($data,$event); eaten=!eaten" >
         <img ng-src="{{creatures[0].gif}}"/>
       </div>
 
