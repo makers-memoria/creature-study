@@ -1,12 +1,13 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', ['ngDraggable'])
 
 .controller('FoodCtrl', function($scope, Images) {
   $scope.creatures = Images.pet();
   $scope.food = Images.foodList();
-  $scope.onDragComplete=function(data,evt){
+
+  $scope.onDragComplete = function(data,evt){
     console.log("drag success, data:", data);
   }
-  $scope.onDropComplete=function(data,evt){
+  $scope.onDropComplete = function(data,evt){
     console.log("drop success, data:", data);
   }
   $scope.centerAnchor = true;
