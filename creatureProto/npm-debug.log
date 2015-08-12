@@ -3,11 +3,11 @@
 1 verbose cli   '/usr/local/bin/npm',
 1 verbose cli   'install',
 1 verbose cli   '-g',
-1 verbose cli   'gulp' ]
+1 verbose cli   'ios-sim' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.32
-4 verbose cache add [ 'gulp', null ]
-5 verbose cache add name=undefined spec="gulp" args=["gulp",null]
+4 verbose cache add [ 'ios-sim', null ]
+5 verbose cache add name=undefined spec="ios-sim" args=["ios-sim",null]
 6 verbose parsed url { protocol: null,
 6 verbose parsed url   slashes: null,
 6 verbose parsed url   auth: null,
@@ -17,139 +17,140 @@
 6 verbose parsed url   hash: null,
 6 verbose parsed url   search: null,
 6 verbose parsed url   query: null,
-6 verbose parsed url   pathname: 'gulp',
-6 verbose parsed url   path: 'gulp',
-6 verbose parsed url   href: 'gulp' }
-7 silly lockFile 9750c68d-gulp gulp
-8 verbose lock gulp /Users/nhughes/.npm/9750c68d-gulp.lock
-9 silly lockFile 9750c68d-gulp gulp
-10 silly lockFile 9750c68d-gulp gulp
-11 verbose addNamed [ 'gulp', '' ]
+6 verbose parsed url   pathname: 'ios-sim',
+6 verbose parsed url   path: 'ios-sim',
+6 verbose parsed url   href: 'ios-sim' }
+7 silly lockFile 6af69284-ios-sim ios-sim
+8 verbose lock ios-sim /Users/nhughes/.npm/6af69284-ios-sim.lock
+9 silly lockFile 6af69284-ios-sim ios-sim
+10 silly lockFile 6af69284-ios-sim ios-sim
+11 verbose addNamed [ 'ios-sim', '' ]
 12 verbose addNamed [ null, '*' ]
-13 silly lockFile 72f4391e-gulp gulp@
-14 verbose lock gulp@ /Users/nhughes/.npm/72f4391e-gulp.lock
-15 silly addNameRange { name: 'gulp', range: '*', hasData: false }
-16 verbose request where is /gulp
+13 silly lockFile 03dce7cc-ios-sim ios-sim@
+14 verbose lock ios-sim@ /Users/nhughes/.npm/03dce7cc-ios-sim.lock
+15 silly addNameRange { name: 'ios-sim', range: '*', hasData: false }
+16 verbose request where is /ios-sim
 17 verbose request registry https://registry.npmjs.org/
-18 verbose request id 8329321e4d4fc885
-19 verbose url raw /gulp
-20 verbose url resolving [ 'https://registry.npmjs.org/', './gulp' ]
-21 verbose url resolved https://registry.npmjs.org/gulp
-22 verbose request where is https://registry.npmjs.org/gulp
-23 info trying registry request attempt 1 at 09:44:49
-24 http GET https://registry.npmjs.org/gulp
-25 http 200 https://registry.npmjs.org/gulp
+18 verbose request id d1df999829418c0a
+19 verbose url raw /ios-sim
+20 verbose url resolving [ 'https://registry.npmjs.org/', './ios-sim' ]
+21 verbose url resolved https://registry.npmjs.org/ios-sim
+22 verbose request where is https://registry.npmjs.org/ios-sim
+23 info trying registry request attempt 1 at 10:40:04
+24 http GET https://registry.npmjs.org/ios-sim
+25 http 200 https://registry.npmjs.org/ios-sim
 26 silly registry.get cb [ 200,
 26 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-26 silly registry.get     etag: '"8PJ8TH8QVM19GQS5PQ33G7Y6W"',
+26 silly registry.get     etag: '"91HIQ4PB1NF3ALRSM1TO8OLOF"',
 26 silly registry.get     'content-type': 'application/json',
 26 silly registry.get     'cache-control': 'max-age=60',
-26 silly registry.get     'content-length': '105206',
+26 silly registry.get     'content-length': '18647',
 26 silly registry.get     'accept-ranges': 'bytes',
-26 silly registry.get     date: 'Tue, 11 Aug 2015 08:44:49 GMT',
+26 silly registry.get     date: 'Wed, 12 Aug 2015 09:40:02 GMT',
 26 silly registry.get     via: '1.1 varnish',
-26 silly registry.get     age: '36',
+26 silly registry.get     age: '0',
 26 silly registry.get     connection: 'keep-alive',
-26 silly registry.get     'x-served-by': 'cache-lhr6321-LHR',
+26 silly registry.get     'x-served-by': 'cache-lcy1120-LCY',
 26 silly registry.get     'x-cache': 'HIT',
-26 silly registry.get     'x-cache-hits': '2',
-26 silly registry.get     'x-timer': 'S1439282689.390367,VS0,VE0',
+26 silly registry.get     'x-cache-hits': '1',
+26 silly registry.get     'x-timer': 'S1439372401.341365,VS0,VE688',
 26 silly registry.get     vary: 'Accept' } ]
-27 silly addNameRange number 2 { name: 'gulp', range: '*', hasData: true }
-28 silly addNameRange versions [ 'gulp',
-28 silly addNameRange   [ '0.0.1',
-28 silly addNameRange     '0.0.2',
-28 silly addNameRange     '0.0.3',
-28 silly addNameRange     '0.0.4',
-28 silly addNameRange     '0.0.5',
-28 silly addNameRange     '0.0.7',
-28 silly addNameRange     '0.0.8',
-28 silly addNameRange     '0.0.9',
-28 silly addNameRange     '0.1.0',
-28 silly addNameRange     '0.2.0',
-28 silly addNameRange     '1.0.0',
-28 silly addNameRange     '1.1.0',
-28 silly addNameRange     '1.2.0',
-28 silly addNameRange     '1.2.1',
+27 silly addNameRange number 2 { name: 'ios-sim', range: '*', hasData: true }
+28 silly addNameRange versions [ 'ios-sim',
+28 silly addNameRange   [ '1.8.0',
+28 silly addNameRange     '1.8.1',
+28 silly addNameRange     '1.8.2',
+28 silly addNameRange     '1.9.0',
 28 silly addNameRange     '2.0.0',
 28 silly addNameRange     '2.0.1',
-28 silly addNameRange     '2.1.0',
-28 silly addNameRange     '2.2.0',
-28 silly addNameRange     '2.3.0',
-28 silly addNameRange     '2.4.0',
-28 silly addNameRange     '2.4.1',
-28 silly addNameRange     '2.6.0',
-28 silly addNameRange     '2.6.1',
-28 silly addNameRange     '2.7.0',
 28 silly addNameRange     '3.0.0',
+28 silly addNameRange     '3.1.0',
 28 silly addNameRange     '3.1.1',
-28 silly addNameRange     '3.1.2',
-28 silly addNameRange     '3.1.3',
-28 silly addNameRange     '3.1.4',
-28 silly addNameRange     '3.2.0',
-28 silly addNameRange     '3.2.1',
-28 silly addNameRange     '3.2.2',
-28 silly addNameRange     '3.2.3',
-28 silly addNameRange     '3.2.4',
-28 silly addNameRange     '3.2.5',
-28 silly addNameRange     '3.3.0',
-28 silly addNameRange     '3.3.1',
-28 silly addNameRange     '3.3.2',
-28 silly addNameRange     '3.3.4',
-28 silly addNameRange     '3.4.0',
-28 silly addNameRange     '3.5.0',
-28 silly addNameRange     '3.5.1',
-28 silly addNameRange     '3.5.2',
-28 silly addNameRange     '3.5.5',
-28 silly addNameRange     '3.5.6',
-28 silly addNameRange     '3.6.0',
-28 silly addNameRange     '3.6.1',
-28 silly addNameRange     '3.6.2',
-28 silly addNameRange     '3.7.0',
-28 silly addNameRange     '3.8.0',
-28 silly addNameRange     '3.8.1',
-28 silly addNameRange     '3.8.2',
-28 silly addNameRange     '3.8.3',
-28 silly addNameRange     '3.8.4',
-28 silly addNameRange     '3.8.5',
-28 silly addNameRange     '3.8.6',
-28 silly addNameRange     '3.8.7',
-28 silly addNameRange     '3.8.8',
-28 silly addNameRange     '3.8.9',
-28 silly addNameRange     '3.8.10',
-28 silly addNameRange     '3.8.11',
-28 silly addNameRange     '3.9.0' ] ]
-29 verbose addNamed [ 'gulp', '3.9.0' ]
-30 verbose addNamed [ '3.9.0', '3.9.0' ]
-31 silly lockFile c2697a61-gulp-3-9-0 gulp@3.9.0
-32 verbose lock gulp@3.9.0 /Users/nhughes/.npm/c2697a61-gulp-3-9-0.lock
-33 silly lockFile af4766b8-ry-npmjs-org-gulp-gulp-3-9-0-tgz https://registry.npmjs.org/gulp/-/gulp-3.9.0.tgz
-34 verbose lock https://registry.npmjs.org/gulp/-/gulp-3.9.0.tgz /Users/nhughes/.npm/af4766b8-ry-npmjs-org-gulp-gulp-3-9-0-tgz.lock
-35 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp/-/gulp-3.9.0.tgz',
-35 verbose addRemoteTarball   'cf1fba4cb558bb8c6ae6c9613f583ae2620d214a' ]
-36 info retry fetch attempt 1 at 09:44:50
-37 verbose fetch to= /var/folders/bx/grqg81yn4h18kd2gl7gz2k6r0000gp/T/npm-34182-Td3C1x7t/registry.npmjs.org/gulp/-/gulp-3.9.0.tgz
-38 http GET https://registry.npmjs.org/gulp/-/gulp-3.9.0.tgz
-39 http 200 https://registry.npmjs.org/gulp/-/gulp-3.9.0.tgz
-40 silly lockFile af4766b8-ry-npmjs-org-gulp-gulp-3-9-0-tgz https://registry.npmjs.org/gulp/-/gulp-3.9.0.tgz
-41 silly lockFile af4766b8-ry-npmjs-org-gulp-gulp-3-9-0-tgz https://registry.npmjs.org/gulp/-/gulp-3.9.0.tgz
-42 silly lockFile c2697a61-gulp-3-9-0 gulp@3.9.0
-43 silly lockFile c2697a61-gulp-3-9-0 gulp@3.9.0
-44 silly lockFile 72f4391e-gulp gulp@
-45 silly lockFile 72f4391e-gulp gulp@
-46 error Error: EACCES, mkdir '/Users/nhughes/.npm/gulp/3.9.0'
-46 error  { [Error: EACCES, mkdir '/Users/nhughes/.npm/gulp/3.9.0']
-46 error   errno: 3,
-46 error   code: 'EACCES',
-46 error   path: '/Users/nhughes/.npm/gulp/3.9.0' }
-47 error Please try running this command again as root/Administrator.
-48 error System Darwin 14.3.0
-49 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "gulp"
-50 error cwd /Users/nhughes/workspace/MakersAcademy/Course/week10/prototype/creature/creatureProto
-51 error node -v v0.10.32
-52 error npm -v 1.4.28
-53 error path /Users/nhughes/.npm/gulp/3.9.0
-54 error code EACCES
-55 error errno 3
-56 error stack Error: EACCES, mkdir '/Users/nhughes/.npm/gulp/3.9.0'
-57 verbose exit [ 3, true ]
+28 silly addNameRange     '4.1.0',
+28 silly addNameRange     '4.1.1',
+28 silly addNameRange     '3.2.0' ] ]
+29 verbose addNamed [ 'ios-sim', '4.1.1' ]
+30 verbose addNamed [ '4.1.1', '4.1.1' ]
+31 silly lockFile 3a5a13fe-ios-sim-4-1-1 ios-sim@4.1.1
+32 verbose lock ios-sim@4.1.1 /Users/nhughes/.npm/3a5a13fe-ios-sim-4-1-1.lock
+33 silly lockFile 4bd118d3-js-org-ios-sim-ios-sim-4-1-1-tgz https://registry.npmjs.org/ios-sim/-/ios-sim-4.1.1.tgz
+34 verbose lock https://registry.npmjs.org/ios-sim/-/ios-sim-4.1.1.tgz /Users/nhughes/.npm/4bd118d3-js-org-ios-sim-ios-sim-4-1-1-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/ios-sim/-/ios-sim-4.1.1.tgz',
+35 verbose addRemoteTarball   '3458eca5e5d5e97ae11f19e35f6768584dcbf7cd' ]
+36 info retry fetch attempt 1 at 10:40:05
+37 verbose fetch to= /var/folders/bx/grqg81yn4h18kd2gl7gz2k6r0000gp/T/npm-36291-WEvDA2k-/registry.npmjs.org/ios-sim/-/ios-sim-4.1.1.tgz
+38 http GET https://registry.npmjs.org/ios-sim/-/ios-sim-4.1.1.tgz
+39 http 200 https://registry.npmjs.org/ios-sim/-/ios-sim-4.1.1.tgz
+40 silly lockFile 4bd118d3-js-org-ios-sim-ios-sim-4-1-1-tgz https://registry.npmjs.org/ios-sim/-/ios-sim-4.1.1.tgz
+41 silly lockFile 4bd118d3-js-org-ios-sim-ios-sim-4-1-1-tgz https://registry.npmjs.org/ios-sim/-/ios-sim-4.1.1.tgz
+42 silly lockFile 3a5a13fe-ios-sim-4-1-1 ios-sim@4.1.1
+43 silly lockFile 3a5a13fe-ios-sim-4-1-1 ios-sim@4.1.1
+44 silly lockFile 03dce7cc-ios-sim ios-sim@
+45 silly lockFile 03dce7cc-ios-sim ios-sim@
+46 silly resolved [ { name: 'ios-sim',
+46 silly resolved     version: '4.1.1',
+46 silly resolved     os: [ 'darwin' ],
+46 silly resolved     preferGlobal: 'true',
+46 silly resolved     description: 'launch iOS apps into the iOS Simulator from the command line (Xcode 6.0+)',
+46 silly resolved     main: 'ios-sim',
+46 silly resolved     repository: { type: 'git', url: 'https://github.com/phonegap/ios-sim' },
+46 silly resolved     engines: { node: '>=0.10.0' },
+46 silly resolved     keywords: [ 'ios-sim', 'iOS Simulator' ],
+46 silly resolved     bin: { 'ios-sim': './bin/ios-sim' },
+46 silly resolved     bugs: { url: 'https://github.com/phonegap/ios-sim/issues' },
+46 silly resolved     author: { name: 'Shazron Abdullah' },
+46 silly resolved     license: 'MIT',
+46 silly resolved     dependencies: { simctl: '^0.0.6', nopt: '1.0.9', 'bplist-parser': '^0.0.6' },
+46 silly resolved     gitHead: 'a0f2e2d8e4deca377b70041f3cbb2a529f6fa5e5',
+46 silly resolved     homepage: 'https://github.com/phonegap/ios-sim',
+46 silly resolved     _id: 'ios-sim@4.1.1',
+46 silly resolved     scripts: {},
+46 silly resolved     _shasum: '3458eca5e5d5e97ae11f19e35f6768584dcbf7cd',
+46 silly resolved     _from: 'ios-sim@',
+46 silly resolved     _npmVersion: '2.5.1',
+46 silly resolved     _nodeVersion: '0.12.0',
+46 silly resolved     _npmUser: { name: 'shazron', email: 'shazron@gmail.com' },
+46 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+46 silly resolved     dist:
+46 silly resolved      { shasum: '3458eca5e5d5e97ae11f19e35f6768584dcbf7cd',
+46 silly resolved        tarball: 'http://registry.npmjs.org/ios-sim/-/ios-sim-4.1.1.tgz' },
+46 silly resolved     directories: {},
+46 silly resolved     _resolved: 'https://registry.npmjs.org/ios-sim/-/ios-sim-4.1.1.tgz' } ]
+47 info install ios-sim@4.1.1 into /usr/local/lib
+48 info installOne ios-sim@4.1.1
+49 verbose lib/node_modules/ios-sim unbuild
+50 verbose tar unpack /Users/nhughes/.npm/ios-sim/4.1.1/package.tgz
+51 silly lockFile 5027580f-r-local-lib-node-modules-ios-sim tar:///usr/local/lib/node_modules/ios-sim
+52 verbose lock tar:///usr/local/lib/node_modules/ios-sim /Users/nhughes/.npm/5027580f-r-local-lib-node-modules-ios-sim.lock
+53 silly lockFile 7f871e8f-es-npm-ios-sim-4-1-1-package-tgz tar:///Users/nhughes/.npm/ios-sim/4.1.1/package.tgz
+54 verbose lock tar:///Users/nhughes/.npm/ios-sim/4.1.1/package.tgz /Users/nhughes/.npm/7f871e8f-es-npm-ios-sim-4-1-1-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/ios-sim'
+56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/ios-sim']
+56 error   errno: 3,
+56 error   code: 'EACCES',
+56 error   path: '/usr/local/lib/node_modules/ios-sim',
+56 error   fstream_type: 'Directory',
+56 error   fstream_path: '/usr/local/lib/node_modules/ios-sim',
+56 error   fstream_class: 'DirWriter',
+56 error   fstream_stack:
+56 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+56 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+56 error      'Object.oncomplete (fs.js:107:15)' ] }
+57 error Please try running this command again as root/Administrator.
+58 error System Darwin 14.3.0
+59 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "ios-sim"
+60 error cwd /Users/nhughes/workspace/MakersAcademy/Course/week10/prototype/creature/creatureProto
+61 error node -v v0.10.32
+62 error npm -v 1.4.28
+63 error path /usr/local/lib/node_modules/ios-sim
+64 error fstream_path /usr/local/lib/node_modules/ios-sim
+65 error fstream_type Directory
+66 error fstream_class DirWriter
+67 error code EACCES
+68 error errno 3
+69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/ios-sim'
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+70 error fstream_stack Object.oncomplete (fs.js:107:15)
+71 verbose exit [ 3, true ]
