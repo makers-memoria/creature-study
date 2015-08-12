@@ -26,11 +26,11 @@ angular.module('starter.services', [])
   var food = [{
     id: 0,
     name: 'Sandwich',
-    location: '/img/sammich.png'
+    location: './img/sammich.png'
   }, {
     id: 1,
     name: 'Rice',
-    location: '/img/fried_rice__x1_iconic_png_1354829839.png'
+    location: './img/fried_rice__x1_iconic_png_1354829839.png'
   }];
 
   return {
