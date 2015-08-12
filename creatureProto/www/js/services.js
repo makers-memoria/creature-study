@@ -23,15 +23,7 @@ angular.module('starter.services', [])
 
 
   // Some fake testing data
-  var food = [{
-    id: 0,
-    name: 'Sandwich',
-    location: './img/sammich.png'
-  }, {
-    id: 1,
-    name: 'Rice',
-    location: './img/fried_rice__x1_iconic_png_1354829839.png'
-  }];
+  var food = [];
 
   return {
     // pet: function() {
@@ -41,6 +33,29 @@ angular.module('starter.services', [])
       return food;
     }
   };
+})
+
+.factory('populateFood', function(){
+  var food = [{
+    id: 0,
+    name: 'Sandwich',
+    location: './img/sammich.png'
+  }, {
+    id: 1,
+    name: 'Rice',
+    location: './img/fried_rice__x1_iconic_png_1354829839.png'
+  }, {
+    id: 2,
+    name: 'Taco',
+    location: './img/cold_taco.png'
+  }
+    ];
+
+    return {
+      randomFood: function() {
+        return food[Math.floor(Math.random() * food.length)]
+      }
+    }
 })
 
 .factory('QuestionFactory', ['$firebaseArray', function($firebaseArray) {
@@ -56,7 +71,7 @@ angular.module('starter.services', [])
       return list;
     }
   };
-  
+
 }]);
 
 
@@ -81,6 +96,3 @@ angular.module('starter.services', [])
 //         }
 //     });
 // });
-
-
-
