@@ -14,15 +14,15 @@
           </a>
         </div>
         </div>
-      
-          <ion-item ng-repeat="item in questionsArray">
-            {{item.answer}}
-          </ion-item>
-          <label class="item item-input">
-              <input type="text" placeholder="Answer"> 
-          </label>
           
-          {{randomQ.answer}}
+          <label class="item item-input">
+              <input type="text" placeholder="Answer" ng-model='answer'> 
+          </label>
+          <button ng-click="validateAnswer(answer,randomQ)" class="button button-block button-assertive">
+              Submit
+          </buttom>
+          
+          {{randomQ.question}}
           
           
     </ion-content>

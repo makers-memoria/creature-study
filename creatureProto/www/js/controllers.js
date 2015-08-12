@@ -69,6 +69,14 @@ angular.module('starter.controllers', ['ngDraggable', 'firebase'])
     $scope.randomQ = randomProperty(questionsArray);
   });
   
+
+  
+  $scope.validateAnswer = function(answer, randomQ) {
+    if(answer === randomQ.answer) {
+      console.log("You go girl!")
+    }
+  }
+  
   
   
   
