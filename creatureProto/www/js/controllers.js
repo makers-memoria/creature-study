@@ -52,20 +52,9 @@ angular.module('starter.controllers', ['ngDraggable', 'firebase'])
       $scope.items.$add({
       question: $scope.items.question, 
       answer: $scope.items.answer,
-      date: Date.now()
+      date: Date.now(),
+      interval: 5 * 1000
     });
     
   };
-  // $scope.setDate = function(question) {
-  //   question.date = new Date();
-  //   question.$save();
-  // };
-  // 
-  // fb.$add({
-  //     question: "Grapes of Wrath",
-  //     answer: "John Steinbeck",
-  //     date: Date.now() - 3600 * 1000 * 24 * 72 // 72 days ago
-  // });
-  // 
-
 });
