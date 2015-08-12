@@ -41,4 +41,35 @@ angular.module('starter.services', [])
       return food;
     }
   };
-});
+})
+
+.factory('QuestionFactory', ['$firebaseArray', function($firebaseArray) {
+  var itemRef =  new Firebase('https://studymemoria.firebaseio.com/MyStudies');
+  return $firebaseArray(itemRef);
+}]);
+
+
+
+
+// .factory('QuestionFactory', function($firebaseObject) {
+//   return $firebaseObject.$extend({
+//     $$updated: function(snap){
+//       var changed = $firebaseObject.prototype.$$updated.apply(this, arguments);
+//             // manipulate the date
+//             if( changed ) {
+//                this.date = new Date(this.date||0);
+//             }
+//             // inform the sync manager that it changed
+//             return changed;
+//     },
+//     toJSON: function() {
+//             return angular.extend({}, this, {
+//                 // revert Date objects to json data
+//                 date: this.date? this.date.getTime() : null
+//             });
+//         }
+//     });
+// });
+
+
+

@@ -1,4 +1,4 @@
-angular.module('starter.controllers', ['ngDraggable'])
+angular.module('starter.controllers', ['ngDraggable', 'firebase'])
 
 .controller('PetCtrl', function($scope, Images) {
   $scope.myVar = false;
@@ -19,7 +19,7 @@ angular.module('starter.controllers', ['ngDraggable'])
        $scope.myVar = false;
      });
    }, 1000);
-  }
+ };
 
 })
 
@@ -44,5 +44,28 @@ angular.module('starter.controllers', ['ngDraggable'])
 })
 
 
-.controller('QuestionsCtrl', function($scope) {
+.controller('QuestionsCtrl', function($scope, QuestionFactory) {
+  
+  $scope.items = QuestionFactory;
+    
+    $scope.addQuestion = function(){ 
+      $scope.items.$add({
+      question: $scope.items.question, 
+      answer: $scope.items.answer,
+      date: Date.now()
+    });
+    
+  };
+  // $scope.setDate = function(question) {
+  //   question.date = new Date();
+  //   question.$save();
+  // };
+  // 
+  // fb.$add({
+  //     question: "Grapes of Wrath",
+  //     answer: "John Steinbeck",
+  //     date: Date.now() - 3600 * 1000 * 24 * 72 // 72 days ago
+  // });
+  // 
+
 });
