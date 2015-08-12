@@ -14,14 +14,13 @@
           </a>
         </div>
         </div>
-          
+        <div class="padding">
+          Question: {{randomQ.question}}
           <label class="item item-input">
-              <input type="text" placeholder="Answer" ng-model='answer'> 
+            <input type="text" placeholder="Answer" ng-model='answer'> 
           </label>
-          <button ng-click="validateAnswer(answer,randomQ)" class="button button-block button-assertive">Submit</button>
-          
-          {{randomQ.question}}
-          
+          <a ng-click="validateAnswer(answer,randomQ)" class="button button-block button-energized">Submit</a>
+        </div>
           
     </ion-content>
 </ion-view>
