@@ -14,7 +14,16 @@
           </a>
         </div>
         </div>
-        
-        {{items}}
+      
+          <ion-item ng-repeat="item in questionsArray">
+            {{item.answer}}
+          </ion-item>
+          <label class="item item-input">
+              <input type="text" placeholder="Answer"> 
+          </label>
+          
+          {{randomQ.answer}}
+          
+          
     </ion-content>
 </ion-view>

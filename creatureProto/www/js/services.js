@@ -46,6 +46,17 @@ angular.module('starter.services', [])
 .factory('QuestionFactory', ['$firebaseArray', function($firebaseArray) {
   var itemRef =  new Firebase('https://studymemoria.firebaseio.com/MyStudies');
   return $firebaseArray(itemRef);
+}])
+
+.factory('listFactory', ['$firebaseArray', function($firebaseArray) {
+  var itemRef =  new Firebase('https://studymemoria.firebaseio.com/MyStudies');
+  var list = $firebaseArray(itemRef);
+  return {
+    myList: function() {
+      return list;
+    }
+  };
+  
 }]);
 
 
