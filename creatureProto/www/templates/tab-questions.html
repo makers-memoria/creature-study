@@ -5,9 +5,9 @@
                 <input type="text" placeholder="Question" ng-model="items.question">
             </label>
             <label class="item item-input">
-                <input type="text" placeholder="Answer" ng-model="items.answer"> 
+                <input type="text" placeholder="Answer" ng-model="items.answer">
             </label>
-  
+
         <div class="padding">
           <a href="#/pet" ng-click="addQuestion()" class="button button-block button-assertive">
               Submit
@@ -17,10 +17,10 @@
         <div class="padding">
           Question: {{randomQ.question}}
           <label class="item item-input">
-            <input type="text" placeholder="Answer" ng-model='answer'> 
+            <input type="text" placeholder="Answer" ng-model='answer'>
           </label>
-          <a ng-click="validateAnswer(answer,randomQ)" class="button button-block button-energized">Submit</a>
+          <a href="#/pet" ng-click="validateAnswer(answer,randomQ)" class="button button-block button-energized">Submit</a>
         </div>
-          
+
     </ion-content>
 </ion-view>

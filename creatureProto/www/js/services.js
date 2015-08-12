@@ -31,6 +31,9 @@ angular.module('starter.services', [])
     // },
     foodList: function() {
       return food;
+    },
+    addFood: function(foodItem) {
+      food.push(foodItem)
     }
   };
 })

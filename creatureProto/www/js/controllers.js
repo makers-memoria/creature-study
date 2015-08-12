@@ -43,7 +43,7 @@ angular.module('starter.controllers', ['ngDraggable', 'firebase'])
 })
 
 
-.controller('QuestionsCtrl', function($scope, QuestionFactory, listFactory, populateFood) {
+.controller('QuestionsCtrl', function($scope, QuestionFactory, listFactory, populateFood, Images) {
 
   $scope.items = QuestionFactory;
 
@@ -72,8 +72,9 @@ angular.module('starter.controllers', ['ngDraggable', 'firebase'])
 
   $scope.validateAnswer = function(answer, randomQ) {
     if(answer === randomQ.answer) {
-      console.log(populateFood.randomFood());
-
+      var randFood = populateFood.randomFood();
+      Images.addFood(randFood);
+      console.log(Images.foodList())
     }
   }
 
