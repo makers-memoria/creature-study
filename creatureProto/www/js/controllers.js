@@ -74,6 +74,7 @@ angular.module('starter.controllers', ['ngDraggable', 'firebase'])
     if(answer === randomQ.answer) {
       var randFood = populateFood.randomFood();
       Images.addFood(randFood);
+      console.log(Images.foodList())
     }
   }
 
